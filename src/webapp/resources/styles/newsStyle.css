@@ -1,0 +1,500 @@
+/* for base layout */
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Trirong);
+html,body {
+	height: 100%;
+	width: 100%;
+		background-image: url("../images/pexels-maria-orlova-4947408.jpg");
+background-size: cover;
+}
+
+
+* {
+	margin: 0 auto;
+}
+input{
+	background:transparent;
+	 border: solid 1px;
+	 border-color: white;
+	 margin: 2px;
+    outline: none;
+    font-family: "Trirong", serif;
+    font-weight: 550;
+}
+input:hover{
+	background-color: white;
+	opacity: 0.8;
+}
+input[type=submit]{
+	color: white;
+}
+input[type=submit]:hover{
+		background: white;
+	opacity: 0.8;
+	color: black;
+}
+a{
+	color: white;
+}
+.page {
+	border: solid 1px grey;
+	font: normal 150% bold;
+	font-family: "Trirong", serif;
+	color: white;
+	height: 100%;
+	min-width: 500px;
+	min-height: 500px;
+	position: relative;
+	width: 100%;
+	
+}
+
+.header {
+	color: white;
+	border: solid 1px white;
+	height: 145px;
+	font-size : 24px;
+	margin-left: -1px; 
+	margin-right: -1px; 
+	margin-top: -1px; 
+}
+
+.menu,.content {
+	bottom: 20px;
+	position: absolute;
+	top: 145px;
+ 	overflow: auto; 
+}
+      .content::-webkit-scrollbar {
+        width: 1em;
+      }
+      .content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+      }
+      .content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(left, #fff, #e4e4e4);
+    border: 1px solid #aaa;
+      }
+        .content::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+
+  .content::-webkit-scrollbar-thumb:active{
+    background: linear-gradient(left, #22ADD4, #1E98BA);
+  }
+.menu {
+	left: 0;
+	width: 26.5%;
+	font-size: 28px;
+	background: transparent;
+
+
+}
+
+.content {
+	left: 25%; 
+	right: 0;
+	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+ 	padding-left: 10px; 
+	
+	border: solid 1px grey;
+	
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	border: solid 1px black;
+	background-color: black;
+	opacity: 0.6;
+	font-size: 15px;
+	
+	margin-left: -1px;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* for menu */
+ .menu-wrapper {
+ 	margin-top : 5px;
+ 	margin-left : 10px;
+ 
+	background: transparent;
+	padding-left: 10px;
+	
+}
+
+.menu-title {
+	background: transparent;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+.list-menu-wrapper {
+	background: transparent;
+	line-height: 1.5;
+	width: 80%;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+.list-menu-invisible-wrapper {
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-right: 5px;
+}
+
+.link_menu::before{
+	background-image: url("../images/transparency.png");
+	background-size: 10px;
+}
+
+.menu-title-wrapper {
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+} 
+
+/* for header */
+ .wrapper {
+	margin-left: 20px;
+	position: relative;
+}
+
+.newstitle {
+	width: 550px;
+	height: 110px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	color: white;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.local-link {
+	position: absolute;
+	bottom: -15px;
+	right: 20px;
+	color: white;
+	font-size: 14px;
+} 
+/* .local{ */
+/* position: absolute; */
+/* top: -90px;  */
+/* right: 15px; */
+	
+/* } */
+/* for news list */
+ .single-news-wrapper {
+	margin-top: 15px;
+}
+
+.single-news-header-wrapper {
+	width: 100%;
+}
+
+.news-title {
+	width: 80%;
+	float: left;
+	text-align: left;
+	padding-bottom: 10px;
+/* 	padding-top: 20px; */
+	padding-right: 5px;
+	padding-left: 20px;
+	word-break: break-all;
+	color: white;
+}
+
+/*.news-date {
+ 	width: 10% float: right;
+	text-align: right;
+	padding-bottom: 5px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-left: 5px;
+	text-decoration: underline;
+} */
+
+.news-content {
+	word-break: break-all;
+	text-align: left;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 25%;
+	padding-left: 20px; 
+}
+
+.link-position {
+	
+	text-align: right;
+	padding-right: 15px;
+}
+
+.body-title {
+	text-align: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.delete-button-position {
+	text-align: right;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-right: 15px;
+}
+
+.no-news{
+	margin-top: 10px;
+	text-align: center;
+}
+ 
+/* for view news */
+ .news_text_format {
+    margin-top: -50px;
+	width: 80%;
+	text-align: left;
+	word-break: break-all;
+}
+tr.news_text_format{
+
+	margin-top: 0px;
+	
+}
+
+.word-breaker {
+	word-break: break-all;
+}
+
+.space_around_view_text {
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.space_around_title_text {
+	width: 20%;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.first-view-button {
+	width: 50px;
+	position: relative;
+	margin-top: 20px;
+	left: 22%;
+}
+
+.second-view-button {
+	width: 50px;
+	position: relative;
+	bottom: 23px;
+	left: 35%;
+}
+
+/* a:visited { */
+/* 	color: #CC6600; */
+/* } */
+
+/* for add   */
+ .cancel-button {
+	width: 40px;
+	position: relative;
+	bottom: 23px;
+}
+a:hover{
+	background: white;
+	opacity: 0.8;
+	color: black;
+}
+
+.save-button {
+	width: 40px;
+	position: relative;
+	left: -90px;
+}
+
+.add-table-margin {
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.add-table-cell-space-top {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.add-table-cell-space-bottom {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.text-font {
+	font: normal 100% Times New Roman;
+}
+
+.all_buttons_size {
+    width: 80px;
+}
+
+/* more than one  */
+.error-box{
+	margin-top: 10px;
+	text-align: center;	
+}
+.text_field{
+	width: 95%;
+}
+.date_field{
+	width: 500;
+	margin-top: 50px;
+}
+.brief_field_format{
+
+	width: 100%;
+	height: 70px;
+    overflow: scroll;
+    margin-top: 50px;
+
+}
+
+
+.brief_field{
+	width: 100%;
+	height: 70px;
+	top: 0px;
+}
+.overflow{
+	min-height: 50px;
+}
+.content_field{
+	
+	width: 100%;
+	height: 150px;
+	overflow: scroll;
+	margin-bottom: 200px; 
+
+}
+
+
+.content_field_format{
+	width: 100%;
+	height: 150px;
+	margin-top: 50px;
+    overflow: scroll;
+scrollbar-color: blue;
+
+}
+.delete-button-position{
+	text-align: right;
+}
+.button_field{
+	position: absolute;
+	left: 30%;
+	padding-top: 25px;
+}
+.yes_button{
+	padding-top: 30px;
+}
+.no_button{
+	padding-top: 30px;
+	padding-left: 40px;
+}
+.input_wrap{
+	
+	padding-left: 30px;
+	padding-top: 20px;	
+}
+.input_wrap input{
+	position: absolute;
+	right: 200px;
+	margin-right: 100px;
+	width: 400px;
+}
+.submit_btn{
+	width: 200px;
+	height: 50px;
+	font: bold;
+	font-family: "Trirong", serif;
+	font-size: 20px;
+	margin-left: 430px;
+	margin-top: 20px;
+}
+.update_button{
+	width: 100px;
+	height: 50px;
+	font: bold;
+	font-family: "Trirong", serif;
+	font-size: 20px;
+}
+.delete_button{
+		width: 100px;
+	height: 50px;
+	font: bold;
+	font-family: "Trirong", serif;
+	font-size: 20px;
+}
+.error {
+	color: #ff0000;
+	font-style: italic;
+	font-weight: bold;
+	position:relative;
+	top: -30px;
+	left: 250px;
+}
+.errorNews_title {
+	color: #ff0000;
+	font-style: italic;
+	font-weight: bold;
+	position:absolute;
+	top: 120px;
+	right: 400px;	
+}
+.errorNews_date {
+	color: #ff0000;
+	font-style: italic;
+	font-weight: bold;
+	position:absolute;
+	top: 200px;
+	right: 400px;	
+}
+.errorNews_brief {
+	color: #ff0000;
+	font-style: italic;
+	font-weight: bold;
+	position:absolute;
+	top: 300px;
+	right: 400px;	
+}
+.errorNews_content {
+	color: #ff0000;
+	font-style: italic;
+	font-weight: bold;
+	position:absolute;
+	top: 420px;
+	right: 400px;	
+}
+
